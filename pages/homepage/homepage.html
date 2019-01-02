@@ -1,0 +1,84 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>homepage</ion-title>
+	</ion-navbar>
+
+</ion-header>
+<ion-content no-padding>
+	<ion-slides #slides1 pager="true" dir="{{dir}}" (ionSlideWillChange)="onSlideChangeStart($event)">
+		<ion-slide *ngFor="let slide of slides">
+			<img [src]="slide.image" class="slide-image" />
+		</ion-slide>
+	</ion-slides>
+
+	<ion-card (click)="cardTapped(card)">
+		<img src="assets/img/card/card-saopaolo.png" />
+		<div style="">
+			<div class="card-title">50% OFF</div>
+			<div class="card-subtitle">entire collection</div>
+			<div style="padding-left: 31px;">
+				<button float-right ion-button outline class="offer-btn" color="white">Shop Now</button>
+			</div>
+		</div>
+	</ion-card>
+
+
+	<p padding>
+		Equal-width columns
+	</p>
+
+	<ion-grid no-padding>
+		<ion-row>
+			<ion-col style="padding-right: 0;
+    padding-left: 3px;">
+				<div>
+					<img src="assets/img/card/card-saopaolo.png" />
+				</div>
+			</ion-col>
+			<ion-col style="padding-right: 0;
+    padding-left: 3px;">
+				<div>
+					<img src="assets/img/card/card-sf.png" />
+				</div>
+			</ion-col>
+			<ion-col style="margin-right: 3px;
+    padding-left: 3px;">
+				<div><img src="assets/img/ica-slidebox-img-2.png" /></div>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col style="padding-right: 0;
+    padding-left: 3px;">
+				<div>
+					<img src="assets/img/card/card-sf.png" />
+				</div>
+			</ion-col>
+			<ion-col style="padding-right: 0;
+    padding-left: 3px;">
+				<div>
+					<img src="assets/img/ica-slidebox-img-3.png" />
+				</div>
+			</ion-col>
+			<ion-col style="margin-right: 3px;
+    padding-left: 3px;">
+				<div><img src="assets/img/card/card-saopaolo.png" /></div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+
+  	<ion-slides id="bestSeller" [slidesPerView]="'auto'" #mySlider>
+		<ion-slide *ngFor="let slide of slides">
+			<div>
+				<img [src]="slide.image" class="slide-image" />
+				<h6 ion-text>Black Forest Half</h6>
+				<!--<i  color="black" style="text-decoration: line-through;">$350.00</i>
+        <i ion-text color="primary">$250.00</i>-->
+			</div>
+
+		</ion-slide>
+		<ion-slide>
+
+		</ion-slide>
+	</ion-slides>
+</ion-content>

@@ -1,0 +1,93 @@
+page-cart-list {
+
+    //global css for this page
+       h5{
+            font-weight: 500;
+        }
+
+ion-card {
+  
+    //card image align
+    img{
+    width: auto;
+    height: 120px;
+    float: left;
+    }
+    ion-card-header{
+        text-align:     center;
+        font-weight: bold;
+    }
+
+    .cart-data{
+        // position: absolute;
+        // left: 266px;
+       
+        h5{
+            font-weight: 500;
+        }
+    }
+
+    .price{
+    position: absolute;
+    right: 20%;
+    font-family: monospace;
+    font-weight: bold;
+    h5 {
+            font-weight: 500;
+        }
+    }
+
+
+    
+}
+
+//clear the ion sliding effect padding 
+    
+.list-md .item-block .item-inner
+    {
+        padding-right: 0px;
+        border:0px;
+    }
+                 .label {
+    margin-top: 0px ;
+    margin-bottom: 0px ;
+    margin-right: 0px ;
+    }
+
+    //cart overview 
+    .cart-overview{
+        position: relative;
+    }
+    p {
+            //display: inline-block;
+                padding-bottom: 10px;
+              
+    }
+    #grand-total{
+          font-weight: bold;
+    }
+    span {
+        .right{
+
+        
+    position: absolute;
+    right: 0;
+    top: 0;
+        }
+    }
+
+    .right{
+
+        
+    position: absolute;
+    right: 0;
+   
+        }
+
+        .footer-card{
+            background: #e0e5ef;
+             
+        }
+        
+
+}
